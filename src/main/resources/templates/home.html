@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body th:each="entry : ${posts}">
-<!--<h2 th:text=${title}></h2>-->
+<body>
+<div th:each="entry : ${posts}">
+    <h2 th:text="${entry.getTitle()}"></h2>
+</div>
 </body>
 </html>
